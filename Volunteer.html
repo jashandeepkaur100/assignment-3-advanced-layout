@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Code - Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="inner-container">
+      <a href="index.html"><img src="img/logo.jpg" alt="page-logo" /></a>
+      <div class="flex-container">
+        <button class="toggle-btn">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Menu / Menu_Alt_01">
+              <path
+                id="Vector"
+                d="M12 17H19M5 12H19M5 7H19"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </button>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="index.html">LEARN</a></li>
+            <li><a href="#">TEACH</a></li>
+            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+         <div class="inner-container flex-volunteer">
+
+            <div class="flexing-volunteer">
+                <h1>Volunteer!</h1>
+                <p>Your support today will help us to continue to deliver amazing educational programs and experiences that have the power to transform lives.</p>
+            </div>
+
+            <div class="program">
+
+                <div>
+                    <h3>Summer Camp Helpers</h3>
+                    <p>Spend your summers with young learners in a fun, fulfilling environment.</p>
+                </div>
+
+                <div>
+                    <h3>Mentors</h3>
+                    <p>Our workshops are magical thanks to our mentors. Help learners get the most out of their experience.</p>
+                </div>
+
+                <div>
+                    <h3>Instructors</h3>
+                    <p>We are seeking enthausiastic and self motivated individuals to help us deliver exceptional content to our learners.</p>
+                </div>
+
+                <div>
+                    <h3>Chapter Leads</h3>
+                    <p>Chapter leads are local leaders pioneering digital literacy in their communities.</p>
+                </div>
+
+            </div>
+
+         </div>
+
+         <section class="form">
+
+            <div class="sign-up-area">
+                <h2>Sign up!</h2>
+            </div>
+
+            <p>Fill out the fields below to sign up as a volunteer.</p>
+
+            <form action="#" method="post" name="Form to sign up as volunteer">             
+                <div class="form-form">
+
+                    <div>
+                        <label for="first-name">Full Name</label>
+                        <input id="first-name" type="text" name="fullname" required>
+                    </div>
+
+                    <div>
+                        <label for="contact-number">Contact Number</label>
+                        <input id="contact-number" type="number" name="contact-number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </div>
+
+                    <div>
+                        <label for="e-mail">E-Mail</label>
+                        <input id="e-mail" type="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="address">Street Address</label>
+                        <input id="address" type="text" name="address">
+                    </div>
+
+                    <div>
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city">
+                    </div>
+
+                    <div>
+                        <label for="province">Province</label>
+                        <input id="province" type="text" name="province">
+                    </div>
+
+                    <div>
+                        <label for="postal-code">Postal Code</label>
+                        <input id="postal-code" type="text" name="postal-code" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
+                    </div>
+
+                </div>
+                <div>
+                    <p>Indicate areas to volunteer according to your skills:</p>
+                    <div class="button-one">
+
+                        <div>
+                            <input id="helper" type="radio" value="helper" name="area-interest" required>
+                            <label for="helper">Summer Camp Helper</label>
+                        </div>
+
+                        <div>
+                            <input id="mentor" type="radio" value="mentor" name="area-interest">
+                            <label for="mentor">Mentor</label>
+                        </div>
+
+                        <div>
+                            <input id="instructor" type="radio" value="instructor" name="area-interest">
+                            <label for="instructor">instructor</label>
+                        </div>
+
+                        <div>
+                            <input id="chapter-lead" type="radio" value="chapter-lead" name="area-interest">
+                            <label for="chapter-lead">Chapter Lead</label>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="Send-button">Send</button>
+            </form>
+        </section> 
+    </main>
+    <footer>
+        <div class="footer-section-one">
+          <a href="/index.html"><img src="img/logo.jpg" alt="page-logo" /></a>
+          <ul class="footer-list-items">
+              <div>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Work With Us</a></li>
+              </div>
+              <div>
+  
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Sponsors</a></li>
+              </div>
+          </ul>
+        </div>
+        <div class="copyright-class">
+          <p>Copyright © 2023</p>
+          <p>For Educational Purposes Only</p>
+        </div>
+      </footer>
+</body>
+</html>
+         </section>
+    </main>
+
+   
+  </body>
+</html>
