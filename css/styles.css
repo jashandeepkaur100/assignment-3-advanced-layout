@@ -1,0 +1,584 @@
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --grey: #dedede;
+    --orange: #eb0917;
+    --grey: #f7f7f6;
+    --green: #0e7e79;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+.container-padding {
+    padding: 1rem;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    box-shadow: 0.5px 1px 10px #8d8686;
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    max-height: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    left: 0;
+    transition: max-height 0.5s ease-in-out;
+    top: 4rem;
+
+}
+
+.toggle-btn {
+    background-color: var(--white);
+    border: var(--white);
+}
+
+header svg {
+    height: 2rem;
+    width: 2rem;
+
+}
+
+header img {
+    width: 5rem;
+}
+
+.show-nav {
+    max-height: 100vh;
+}
+
+.flex-container ul {
+    list-style: none;
+    background-color: var(--white);
+    border: 1rem;
+    padding: 0;
+}
+
+.main-menu li {
+    border-top: 0.1rem solid var(--grey);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-menu li:last-of-type {
+    border-bottom: 0.1rem solid var(--grey);
+}
+
+.flex-container a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.6875rem;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5%;
+}
+
+h1 {
+    padding: 1.5rem 0;
+}
+
+.search-icon svg {
+    width: 2rem;
+    height: 1.4rem;
+    padding-top: 0.2rem;
+
+
+}
+
+.search-icon {
+    padding: 0;
+    background-color: var(--orange);
+    border-radius: 0px 5px 5px 0px;
+}
+
+input {
+    width: 100%;
+}
+
+.search-flex {
+    display: flex;
+
+}
+
+.search-flex input {
+    border-radius: 5px 0 0 5px;
+}
+
+.search-flex {
+    margin: 2rem 0;
+}
+
+.started-cards {
+    background-color: var(--grey);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.get-started-cards h2 {
+    padding-bottom: 2rem;
+}
+
+.started-cards svg {
+    width: 5rem;
+}
+
+.started-cards h3 {
+    padding: 2rem 0;
+}
+
+.started-cards p {
+    padding-bottom: 2.5rem;
+}
+
+.get-started-cards .button {
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.button-started {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.for-flex-one,
+.for-flex-two {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.scroll-card-one,
+.scroll-card-two {
+    background-color: #f7f7f5;
+    padding: 2rem;
+    flex: 0 0 18rem;
+    margin-right: 1rem;
+}
+
+.scroll-card-one h3,
+.scroll-card-two h3 {
+    padding: 1rem 0;
+    color: var(--green);
+}
+
+.scroll-card-one p:last-of-type,
+.scroll-card-two p:last-of-type {
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.scroll-card-one:first-of-type {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.scroll-card-one:first-of-type h3 {
+    color: var(--white);
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.learning-experience {
+    margin-top: 2rem;
+    background-color: var(--grey);
+    padding: 2rem 1rem;
+}
+
+.learning-experience h2 {
+    line-height: 2rem;
+
+}
+
+span {
+    font-weight: bold;
+
+}
+
+.learning-card img {
+    width: 100%;
+}
+
+.learning-card {
+    background-color: var(--white);
+    margin: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0.7px 1px 12px lightgrey;
+}
+
+.learning-experience h2 {
+    padding: 2rem 0 1rem 0;
+}
+
+.learning-experience p {
+    padding-bottom: 1rem;
+}
+
+.learning-card p {
+    color: var(--green);
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+.learning-card h3 {
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+}
+
+.learning-experience .load-more-btn {
+    background-color: var(--green);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.join-community {
+    background-color: var(--orange);
+    padding: 2.5rem 1.7rem;
+    color: var(--white);
+}
+
+.join-community h2 {
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.signup-email input {
+    border-radius: 7px;
+    border: none;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #a7a2a2;
+    font-family: 'Ubuntu', sans-serif;
+    height: 2.5rem;
+}
+
+
+input[type="submit"] {
+    width: 6rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.join-community p {
+    padding-bottom: 2rem;
+}
+
+.footer-section-one {
+    padding: 2rem;
+}
+
+footer img {
+    width: 5rem;
+}
+
+.footer-list-items a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    ;
+}
+
+.footer-list-items {
+    list-style: none;
+    text-align: end;
+}
+
+footer p {
+    background-color: var(--grey);
+}
+
+.copyright-class p:first-of-type {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.copyright-class p:last-of-type {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 750px) {
+    .padding-medium {
+        width: 70%;
+    }
+
+    .flexing-volunteer {
+        width: 80%;
+    }
+
+    .flex-medium {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .flex-medium .started-cards {
+        width: 49%;
+    }
+
+    .button-started {
+        text-align: left;
+    }
+
+    .flex-learning-experience {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .learning-card {
+        width: 32%;
+    }
+
+    .signup-email input {
+
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .email-submit {
+        margin-top: 11px;
+    }
+
+    .flex-mail {
+        width: 100%;
+    }
+
+    .email-submit input {
+        border-radius: 0 0.5rem 0.5rem 0;
+        border-left: 2px solid;
+    }
+
+    .flex-mail {
+        display: flex;
+    }
+
+    .footer-section-one {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-list-items {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .program {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .program div {
+
+        width: 40%;
+        margin-right: 3%;
+    }
+
+    .form-form,
+    .button-one {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+
+    .form-form div,
+    .button-one div {
+        width: 40%;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1160px) {
+
+    .toggle-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    header nav {
+        max-height: 100vh;
+        position: static;
+        width: fit-content;
+        overflow: visible;
+    }
+
+    ul.main-menu {
+        display: flex;
+        gap: 4rem;
+
+    }
+
+    .menu li {
+        border: 0;
+    }
+
+    .padding-medium {
+        width: 50%;
+    }
+
+    .flexing-volunteer {
+        padding: 0;
+    }
+
+    .volunteer-flex {
+        display: flex;
+        gap: 2%;
+
+    }
+
+    .padding-medium {
+        width: 50%;
+    }
+
+    .scroll-card-one {
+        margin-right: 2rem;
+    }
+
+    .learning-card {
+        margin: 1rem;
+        width: 30%;
+    }
+
+    .flex-learning-experience {
+        flex-wrap: nowrap;
+    }
+
+
+
+
+
+
+
+}
+
+/************volunteer********/
+
+.inner-container {
+    padding: 1rem;
+}
+
+
+.program div {
+    background-color: var(--grey);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.program h3 {
+    color: var(--green);
+}
+
+.Send-button {
+    background-color: var(--orange);
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    margin: 3rem 0;
+    height: 2rem;
+    letter-spacing: 0.2rem;
+    border: 3.5rem;
+    width: 90%;
+
+
+}
+
+.form {
+    background-color: var(--grey);
+    padding: 0 1rem;
+}
+
+.form-form input {
+    display: block;
+    border-radius: 0.3rem;
+    border: 1px solid var(--grey);
+    width: 98%;
+    height: 2.5rem;
+    margin-bottom: 1.23rem;
+}
+
+.sign-up-area h2 {
+    min-height: 53vh;
+    padding-bottom: 3%;
+    padding-top: 65%;
+    color: white;
+}
+
+.sign-up-area {
+    background-image: url(../img/medium-sign-up.webp);
+    background-position: center;
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+
+}
